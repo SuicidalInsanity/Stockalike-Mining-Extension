@@ -1,0 +1,20 @@
+Version 0.9
+=============
+-Added Flag & Agency for editor filter: Coreworks Extractions Consortium
+-Removed Mk2Expansion mk2 mining parts and rolled them into MiningExtension
+-New Part: 1.25m inline drill
+-New Part: 0.625m oretank
+-New Part: 0.625m ISRU refinery
+
+Version 0.8
+=============
+-Initial Release
+-New Part: Size 1 Stack FuelCell
+-New Part: Size 1 Stack Drill
+-New Part: Size 2 Stack Drill
+-New Part: Size 3 ISRU Refinery
+-New Part: Size 3 Ore Tank
+-New Part: Mk2 FuelCell
+-New Part: Mk2 Drill
+-New Part: Mk2 Ore Tank
+-New Part; Mk2 ISRU Refinery
