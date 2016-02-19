@@ -1,3 +1,8 @@
+Version 0.92
+==================
+-fixes size1inline drill now appearing
+-new Part: 1.25m stack superheavy-duty landing leg
+
 Version 0.9
 =============
 -Added Flag & Agency for editor filter: Coreworks Extractions Consortium
