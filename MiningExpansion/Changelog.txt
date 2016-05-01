@@ -1,6 +1,13 @@
+Version 0.93
+=======================================================
+KSP 1.1 update
+-fixed landing leg
+-New Part: size 0 inline generator
+-New part: 0.625m stack drill
+
 Version 0.92
 ==================
--fixes size1inline drill now appearing
+-fixes size1inline drill not appearing
 -new Part: 1.25m stack superheavy-duty landing leg
 
 Version 0.9
