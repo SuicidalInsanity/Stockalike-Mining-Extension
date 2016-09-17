@@ -1,3 +1,12 @@
+Version 0.95
+====================================================
+-New Part: Size 1 Oceanic Extractor
+-New Part: size 1 atmospheric compressor
+-New Part: Size 2 Atmospheric Compressor
+-Added NFP compatibility MM patch
+-Added KA compatibility MM patch
+-All parts now have search tags
+
 Version 0.93
 =======================================================
 KSP 1.1 update
