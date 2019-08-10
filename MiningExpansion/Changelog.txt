@@ -1,3 +1,40 @@
+0.99.3
+==============================================
+-Fixes KA patch
+-Mk3 ISRU now has KA config
+-Size 3 stack drill now has EPL recycler functionality
+-Mk2 and mk3 parts now have correct impact and temp rating for their formfactor
+-Fixes mini grabbing unit typo
+-Ore tank masses brought inline with stock masses
+
+0.99.2
+===============================================
+KSP 1.7 update
+-Fixes Tweakscale patch, no longer conflicts with TS's SME patch
+-Fixes scaled flag for agency contracts
+-Fixes missing bulkhead profiles
+-Adds Whitelist for ReStock compatibility
+
+0.99
+=====================================================
+-New Part: Mass Driver RCS
+-New Part: Size3 Stack Drill
+-New Part: Mk3 Ore Tank
+-New Part: Mk3 ISRU Converter
+-New Part: Size2 Oceanic Exxtractor
+-New Part: Size1 Inline Oceanic Extractor
+-Fixes Size0 Stack Drill attach node size
+-Fixes Size0 Fuelcell texture
+-Fixes Size1 Fuelcell texture
+-Fixes Size2 Fuelcell texture
+-Fixes Size1 Stack Drill bottom Node
+-Fixes landing leg texture.
+-Landing leg now properly mirrors in Mirror Symmetry
+-Mass Drivers now have bottom node, fairings
+-Tweaks atmospheric Xenon abundance for Atmo condensers
+-Various part description/tags/Localization fixes
+-Adds Tweakscale patch, see readme
+
 0.97.1
 =====================================================
 -Update for KSP 1.4.1
