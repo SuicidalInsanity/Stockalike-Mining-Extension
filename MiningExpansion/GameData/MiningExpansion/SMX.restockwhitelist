@@ -1,9 +1,12 @@
 Squad/Parts/Utility/landingLegLT-2/landingLeg.dds
+Squad/Parts/Wheel/LandingGear/LandingGear.dds
+Squad/Parts/Wheel/roverWheelTR-2L/ksp_r_medWheel_diff.dds
 Squad/Parts/Wheel/roverWheelTR-2L/ksp_r_medWheel_wheel_diff.dds
+Squad/Parts/Wheel/roverWheelTR-2L/ksp_r_medWheel_normal.dds
 Squad/Parts/FuelTank/mk2FuselageShort/mk2FuselageShort.dds
 Squad/Parts/FuelTank/mk3Fuselage/Mk3Fuselage.dds
 Squad/Parts/Resources/FuelCell/fuellcell.dds
-Squad/Parts/Resources/largeTank/ksp_l_resourceContainer_diff.dds
+Squad/Parts/Resources/LargeTank/ksp_l_resourceContainer_diff.dds
 Squad/Parts/Resources/ISRU/Processor_Large.dds
 Squad/Parts/Resources/MiniISRU/ksp_s_processorSmall_diff.dds
 Squad/Parts/Engine/liquidEngineMainsail/model002.dds
@@ -13,3 +16,11 @@ Squad/Parts/Electrical/z-4kBattery/ksp_l_batteryPack_diff.dds
 Squad/Parts/Utility/GrapplingDevice/grabberDiffuse.dds
 Squad/Parts/Structural/mk1Parts/Mk1Structural.dds
 Squad/Parts/Structural/Size3To2Adapter/decoupler_and_adaptor_cm.dds
+Squad/Parts/Utility/mk2CargoBay/mk2CargoBay.dds
+Squad/Parts/Aero/ramAirIntake/RampIntake.dds
+Squad/Parts/Utility/landingLegLT-1/ksp_r_landingStrut_diff
+Squad/Parts/Command/mk2LanderCan_v2/Mk2Can
+Squad/Parts/Command/mk2LanderCan_v2/Mk2Can_glow
+Squad/Parts/Utility/ladderTelescopicBay/model000
+Squad/Spaces/mk2LanderCanInternal/mk2LanderCan_props_diffuse
+Squad/Parts/Utility/dockingPort/model000
