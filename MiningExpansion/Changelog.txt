@@ -1,3 +1,14 @@
+1.1.6
+=============================================
+-Size0ISRU tempCurve changed, ISRU will no longer overheat
+-Fixes deployable wheels 
+
+1.1.5
+==============================================
+KSP 1.10 update
+-Fixes Asteroid klaw and Radial Klaw textures
+-Miniklaw moved to legacy due to stock miniklaw; non 1.10 installs can find it by removing the TechHidden = True line from the /MiningExpansion/parts/size0klaw/part.cfg
+-Improves Atmospheric Condenser Xenon harvest rates
 1.1
 ===========================================
 KSP 1.9.x update
