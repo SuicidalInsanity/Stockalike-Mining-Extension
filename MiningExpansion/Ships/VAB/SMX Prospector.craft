@@ -1,8 +1,8 @@
-ship = Prospector
+ship = SMX Prospector
 version = 1.9.1
 description = Prospector scout capable of investigating both asteroids and smaller planetary bodies.
 type = VAB
-size = 6.06976843,6.48093987,6.06976461
+size = 6.06984234,6.09765816,6.06984138
 steamPublishedFileId = 0
 persistentId = 2343245703
 rot = 0,0,0,0
@@ -689,11 +689,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SMX.Radialklaw_4293979988
 	link = linearRcs_4293578070
 	link = linearRcs_4293577380
 	link = noseCone_4294047162
 	link = adapterSmallMiniShort_4293515506
+	link = SMX.Radialklaw_4294306174
 	sym = fuelTank_4294057784
 	sym = fuelTank_4294057736
 	sym = fuelTank_4294057688
@@ -789,11 +789,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SMX.Radialklaw_4293951924
 	link = linearRcs_4293577910
 	link = linearRcs_4293577300
 	link = noseCone_4293574952
 	link = adapterSmallMiniShort_4293515458
+	link = SMX.Radialklaw_4294305704
 	sym = fuelTank_4294057736
 	sym = fuelTank_4294057688
 	sym = fuelTank_4294058046
@@ -889,11 +889,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SMX.Radialklaw_4293951450
 	link = linearRcs_4293577836
 	link = linearRcs_4293577220
 	link = noseCone_4293574908
 	link = adapterSmallMiniShort_4293515410
+	link = SMX.Radialklaw_4294310988
 	sym = fuelTank_4294057688
 	sym = fuelTank_4294058046
 	sym = fuelTank_4294057784
@@ -989,11 +989,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SMX.Radialklaw_4293950976
 	link = linearRcs_4293577762
 	link = linearRcs_4293577638
 	link = noseCone_4293574864
 	link = adapterSmallMiniShort_4293515666
+	link = SMX.Radialklaw_4294306644
 	sym = fuelTank_4294058046
 	sym = fuelTank_4294057784
 	sym = fuelTank_4294057736
@@ -2100,621 +2100,13 @@ PART
 }
 PART
 {
-	part = SMX.Radialklaw_4293979988
-	partName = Part
-	persistentId = 4005669169
-	pos = -1.3273102,12.2799959,-1.32730985
-	attPos = 5.96046448E-08,-0.642889977,1.77635684E-15
-	attPos0 = -0.604307711,0.220687866,-1.4901163E-08
-	rot = -0.923879564,-2.10734363E-08,0.382683516,-4.21468513E-08
-	attRot = 0,0.707106709,-0.707106709,0
-	attRot0 = -0.707106888,-3.55981982E-08,0.707106709,-3.08741654E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = SMX.Radialklaw_4293951924
-	sym = SMX.Radialklaw_4293951450
-	sym = SMX.Radialklaw_4293950976
-	srfN = srfAttach,fuelTank_4294058046,COL3,0|0|0,0|1.25|0,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleGrappleNode
-		isEnabled = True
-		stagingEnabled = True
-		state = Ready
-		dockUId = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseAction
-			{
-				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = False
-		animTime = 1
-		animSpeed = 16.666666
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = SMX.Radialklaw_4293951924
-	partName = Part
-	persistentId = 1685862914
-	pos = -1.32730997,12.2799959,1.3273102
-	attPos = 0,-0.642889977,0
-	attPos0 = -0.604307652,0.220687866,-2.98023224E-08
-	rot = 0.382683426,4.47034765E-08,-0.923879623,1.4901155E-08
-	attRot = 0,0.707106709,-0.707106709,0
-	attRot0 = -0.707106888,-3.55981946E-08,0.707106709,-3.08741654E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = SMX.Radialklaw_4293951450
-	sym = SMX.Radialklaw_4293950976
-	sym = SMX.Radialklaw_4293979988
-	srfN = srfAttach,fuelTank_4294057784,COL3,0|0|0,0|1.25|0,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleGrappleNode
-		isEnabled = True
-		stagingEnabled = True
-		state = Ready
-		dockUId = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseAction
-			{
-				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = False
-		animTime = 1
-		animSpeed = 16.666666
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = SMX.Radialklaw_4293951450
-	partName = Part
-	persistentId = 3715323762
-	pos = 1.32731032,12.2799959,1.32731009
-	attPos = -5.96046448E-08,-0.642889977,1.19209261E-07
-	attPos0 = -0.604307771,0.220687866,-5.96046306E-08
-	rot = -0.382683516,4.21468549E-08,-0.923879564,-2.10734399E-08
-	attRot = 0,0.707106709,-0.707106709,0
-	attRot0 = -0.707106888,-3.55982017E-08,0.707106769,-3.08741654E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = SMX.Radialklaw_4293950976
-	sym = SMX.Radialklaw_4293979988
-	sym = SMX.Radialklaw_4293951924
-	srfN = srfAttach,fuelTank_4294057736,COL3,0|0|0,0|1.25|0,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleGrappleNode
-		isEnabled = True
-		stagingEnabled = True
-		state = Ready
-		dockUId = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseAction
-			{
-				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = False
-		animTime = 1
-		animSpeed = 16.666666
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = SMX.Radialklaw_4293950976
-	partName = Part
-	persistentId = 1509376930
-	pos = 1.3273108,12.2799959,-1.32731116
-	attPos = 5.96046448E-08,-0.642889977,-1.19209218E-07
-	attPos0 = -0.60430789,0.220687866,5.96046164E-08
-	rot = -0.923879623,1.49011576E-08,-0.382683396,-4.47034765E-08
-	attRot = 0,0.707106709,-0.707106709,0
-	attRot0 = -0.707106888,-3.55981982E-08,0.707106769,-3.08741654E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = SMX.Radialklaw_4293979988
-	sym = SMX.Radialklaw_4293951924
-	sym = SMX.Radialklaw_4293951450
-	srfN = srfAttach,fuelTank_4294057688,COL3,0|0|0,0|1.25|0,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleGrappleNode
-		isEnabled = True
-		stagingEnabled = True
-		state = Ready
-		dockUId = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseAction
-			{
-				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = False
-		animTime = 1
-		animSpeed = 16.666666
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisInverted = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = linearRcs_4293578070
 	partName = Part
 	persistentId = 3546240377
 	pos = -0.900000215,12.5416889,-1.51784015
 	attPos = 0,0,0
 	attPos0 = -0.436879009,-0.160509109,-0.436879039
-	rot = -2.08616257E-07,0.707106888,-0.707106709,-2.5331974E-07
+	rot = -1.78813934E-07,0.707106888,-0.707106829,-2.5331974E-07
 	attRot = 0,0,0,1
 	attRot0 = -0.270598084,0.65328145,-0.653281569,-0.270598024
 	mir = 1,1,1
@@ -2918,7 +2310,7 @@ PART
 	pos = 0.900000095,12.5416889,1.51784062
 	attPos = 0,0,0
 	attPos0 = -0.436879009,-0.160509109,-0.436879128
-	rot = 0.707106709,2.5331974E-07,-2.08616257E-07,0.707106888
+	rot = 0.707106829,2.5331974E-07,-1.78813934E-07,0.707106888
 	attRot = 0,0,0,1
 	attRot0 = -0.270598084,0.65328145,-0.653281569,-0.270598024
 	mir = 1,1,1
@@ -3017,7 +2409,7 @@ PART
 	part = linearRcs_4293577762
 	partName = Part
 	persistentId = 3883023799
-	pos = 1.51784253,12.5416889,-0.900000393
+	pos = 1.51784277,12.5416889,-0.900000393
 	attPos = 0,0,0
 	attPos0 = -0.436879188,-0.160509109,-0.436879188
 	rot = 0.50000006,0.50000006,-0.500000238,0.499999881
@@ -3119,7 +2511,7 @@ PART
 	part = linearRcs_4293577638
 	partName = Part
 	persistentId = 1238238297
-	pos = 0.899999857,12.5323582,-1.52318287
+	pos = 0.899999857,12.5323582,-1.52318299
 	attPos = 0,0,0
 	attPos0 = -0.4406555,-0.169839859,0.44065544
 	rot = 0,0.707106948,-0.707106769,-5.96046448E-08
@@ -3326,7 +2718,7 @@ PART
 	pos = -0.899999857,12.5323582,1.52318096
 	attPos = 0,0,0
 	attPos0 = -0.44065547,-0.169839859,0.44065544
-	rot = 0.70710665,2.98023224E-08,1.1920929E-07,0.707107008
+	rot = 0.70710665,2.98023224E-08,1.49011612E-07,0.707107008
 	attRot = 0,0,0,1
 	attRot0 = -0.65328145,0.270598173,-0.270598114,-0.653281569
 	mir = 1,1,1
@@ -4427,7 +3819,7 @@ PART
 	pos = -0.900000036,11.7896976,-0.899999917
 	attPos = 0,0,0
 	attPos0 = 0,-0.912500381,0
-	rot = 0.707106829,0,-0.707106888,0
+	rot = 0.707106769,0,-0.707106888,0
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.382683516,0,-0.923879445,0
 	mir = 1,1,1
@@ -4573,7 +3965,7 @@ PART
 	pos = 0.899999917,11.7896976,0.900000036
 	attPos = 0,0,0
 	attPos0 = 0,-0.912500381,0
-	rot = 0.707106888,0,0.707106829,0
+	rot = 0.707106888,0,0.707106769,0
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.382683516,0,-0.923879445,0
 	mir = 1,1,1
@@ -4646,7 +4038,7 @@ PART
 	pos = -0.900000036,11.6021976,-0.899999917
 	attPos = 0,0,0
 	attPos0 = 0,0.187499851,0
-	rot = 0,-5.96046448E-08,0,1.00000012
+	rot = 0,-2.98023224E-08,0,1
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0,0.707106829,0
 	mir = 1,1,1
@@ -5130,7 +4522,7 @@ PART
 	pos = 0.899999917,11.6021976,0.900000036
 	attPos = 0,0,0
 	attPos0 = 0,0.187499851,0
-	rot = 0,-1.00000012,0,-5.96046448E-08
+	rot = 0,-1,0,-2.98023224E-08
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0,0.707106829,0
 	mir = 1,1,1
@@ -6099,7 +5491,7 @@ PART
 	part = telescopicLadderBay_4293183168
 	partName = Part
 	persistentId = 976815820
-	pos = 1.4207032E-07,12.2258797,-1.1330204
+	pos = 2.01674965E-07,12.2258797,-1.1330204
 	attPos = 1.1920929E-07,-0.190339088,5.96046164E-08
 	attPos0 = 0.311551809,-0.283829689,2.98023082E-08
 	rot = -0.0922957733,0.701057434,0.0922957435,-0.701057434
@@ -6171,6 +5563,614 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SMX.Radialklaw_4294310988
+	partName = Part
+	persistentId = 3146751076
+	pos = 1.32734656,12.6632814,1.32734644
+	attPos = 0,-0.152992249,0
+	attPos0 = -0.60435915,0.114075661,-5.96046306E-08
+	rot = -0.382683754,-4.1300602E-08,-0.923879504,1.7107288E-08
+	attRot = 0,0,-0.999999881,0
+	attRot0 = -0.707106709,3.16101243E-08,0.707106948,3.16101101E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SMX.Radialklaw_4294306644
+	sym = SMX.Radialklaw_4294306174
+	sym = SMX.Radialklaw_4294305704
+	srfN = srfAttach,fuelTank_4294057736,COL3,0|0|0,0|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleGrappleNode
+		isEnabled = True
+		stagingEnabled = True
+		state = Ready
+		dockUId = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = False
+		animTime = 1
+		animSpeed = 16.666666
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SMX.Radialklaw_4294306644
+	partName = Part
+	persistentId = 2346414620
+	pos = 1.3273468,12.6632814,-1.32734716
+	attPos = 0,-0.152992249,0
+	attPos0 = -0.604359329,0.114075661,0
+	rot = -0.923879683,-1.71072561E-08,-0.382683128,4.13006092E-08
+	attRot = 0,0,-0.999999881,0
+	attRot0 = -0.707106709,3.16101243E-08,0.707106948,3.16101136E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SMX.Radialklaw_4294306174
+	sym = SMX.Radialklaw_4294305704
+	sym = SMX.Radialklaw_4294310988
+	srfN = srfAttach,fuelTank_4294057688,COL3,0|0|0,0|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleGrappleNode
+		isEnabled = True
+		stagingEnabled = True
+		state = Ready
+		dockUId = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = False
+		animTime = 1
+		animSpeed = 16.666666
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SMX.Radialklaw_4294306174
+	partName = Part
+	persistentId = 4026781425
+	pos = -1.32734656,12.6632814,-1.32734632
+	attPos = 0,-0.152992249,0
+	attPos0 = -0.60435915,0.114075661,-8.94069672E-08
+	rot = -0.923879564,1.71072898E-08,0.382683814,4.1300602E-08
+	attRot = 0,0,-0.999999881,0
+	attRot0 = -0.707106709,3.16101207E-08,0.707106829,3.16101065E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SMX.Radialklaw_4294305704
+	sym = SMX.Radialklaw_4294310988
+	sym = SMX.Radialklaw_4294306644
+	srfN = srfAttach,fuelTank_4294058046,COL3,0|0|0,0|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleGrappleNode
+		isEnabled = True
+		stagingEnabled = True
+		state = Ready
+		dockUId = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = False
+		animTime = 1
+		animSpeed = 16.666666
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SMX.Radialklaw_4294305704
+	partName = Part
+	persistentId = 4057710525
+	pos = -1.32734632,12.6632814,1.32734656
+	attPos = 0,-0.152992249,0
+	attPos0 = -0.60435909,0.114075661,-1.49011612E-08
+	rot = 0.382683247,-4.13006127E-08,-0.923879743,-1.71072596E-08
+	attRot = 0,0,-0.999999881,0
+	attRot0 = -0.70710665,3.16101207E-08,0.707106948,3.16101065E-08
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SMX.Radialklaw_4294310988
+	sym = SMX.Radialklaw_4294306644
+	sym = SMX.Radialklaw_4294306174
+	srfN = srfAttach,fuelTank_4294057784,COL3,0|0|0,0|0|0,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleGrappleNode
+		isEnabled = True
+		stagingEnabled = True
+		state = Ready
+		dockUId = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = False
+		animTime = 1
+		animSpeed = 16.666666
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisInverted = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
